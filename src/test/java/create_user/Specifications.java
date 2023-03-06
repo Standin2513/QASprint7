@@ -1,4 +1,4 @@
-package CreateUser;
+package create_user;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;

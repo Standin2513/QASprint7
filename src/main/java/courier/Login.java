@@ -1,11 +1,11 @@
-package Courier;
+package courier;
 
-public class login {
+public class Login {
 
     public String login;
     public String password;
 
-    public login(String login, String password) {
+    public Login(String login, String password) {
         this.login = login;
         this.password = password;
     }

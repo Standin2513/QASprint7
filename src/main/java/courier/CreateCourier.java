@@ -1,17 +1,17 @@
-package Courier;
+package courier;
 
-public class createCourier {
+public class CreateCourier {
     private String login;
     private String password;
     private String firstName;
 
-    public createCourier(String login, String password, String firstName) {
-        this.login = login;
-        this.password = password;
-        this.firstName = firstName;
+    public CreateCourier(String randomLogin, String randomPassword, String randomFirstName) {
+        this.login = randomLogin;
+        this.password = randomPassword;
+        this.firstName = randomFirstName;
     }
 
-    public createCourier() {
+    public CreateCourier() {
     }
 
     public String getLogin() {

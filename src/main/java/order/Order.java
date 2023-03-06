@@ -1,4 +1,4 @@
-package Order;
+package order;
 
 import java.util.List;
 
@@ -96,4 +96,5 @@ public class Order {
     public void setColor(List<String> color) {
         this.color = color;
     }
+
 }
