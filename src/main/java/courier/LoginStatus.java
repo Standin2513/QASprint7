@@ -28,12 +28,7 @@ public class LoginStatus {
         return userLoginCheck;
     }
 
-    public static void delete() {
-        Login userLogin = new Login("zxc@zxc.ru", "123321");
-        LoginStatus userLoginCheck = LoginStatus.loginCourierRequest(userLogin);
-        Integer id = userLoginCheck.getId();
-        System.out.println(id);
-        System.out.println(DELETE_COURIER_REQUEST+id);
+    public static void deleteCourier(Integer id) {
         given()
                 .when()
                 .delete(DELETE_COURIER_REQUEST+id)

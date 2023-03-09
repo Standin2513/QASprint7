@@ -19,7 +19,7 @@ public class SuccessOrder {
                 .body(successOrder)
                 .when()
                 .post("/api/v1/orders")
-                .then().log().all()
+                .then().statusCode(201)
                 .extract().as(SuccessOrder.class);
         return order;
     }

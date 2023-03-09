@@ -3,15 +3,15 @@ package order;
 import java.util.List;
 
 public class Order {
-    public String firstName;
-    public String lastName;
-    public String address;
-    public Integer metroStation;
-    public String phone;
-    public Integer rentTime;
-    public String deliveryDate;
-    public String comment;
-    public List<String> color;
+    private String firstName;
+    private String lastName;
+    private String address;
+    private Integer metroStation;
+    private String phone;
+    private Integer rentTime;
+    private String deliveryDate;
+    private String comment;
+    private List<String> color;
 
     public Order(String firstName, String lastName, String address, Integer metroStation, String phone, Integer rentTime, String deliveryDate, String comment, List<String> color) {
         this.firstName = firstName;
@@ -89,7 +89,7 @@ public class Order {
         this.comment = comment;
     }
 
-    public List<String> getColor() {
+    public Object getColor() {
         return color;
     }
 

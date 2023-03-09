@@ -2,8 +2,8 @@ package courier;
 
 public class Login {
 
-    public String login;
-    public String password;
+    private String login;
+    private String password;
 
     public Login(String login, String password) {
         this.login = login;

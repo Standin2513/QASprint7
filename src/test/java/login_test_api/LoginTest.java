@@ -14,9 +14,11 @@ public class LoginTest {
     @Test // успешный логин
     public void successLoginTest(){
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpec(200));
-        Login userLogin = new Login("zxc@zxc.ru", "111111");
+        Login userLogin = new Login("zxc@zxc.ru", "123321");
         LoginStatus userLoginCheck = LoginStatus.loginCourierRequest(userLogin);
-        userLoginCheck.getId();
+        Integer id = userLoginCheck.getId();
+        Assert.assertNotNull(id);
+        System.out.println(id);
     }
 
     @Test // запрос без логина или пароля
