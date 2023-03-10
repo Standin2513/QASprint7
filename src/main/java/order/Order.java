@@ -89,7 +89,7 @@ public class Order {
         this.comment = comment;
     }
 
-    public Object getColor() {
+    public List<String> getColor() {
         return color;
     }
 
