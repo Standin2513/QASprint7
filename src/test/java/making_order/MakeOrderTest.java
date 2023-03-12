@@ -12,10 +12,10 @@ import java.util.Collection;
 import java.util.Collections;
 
 @RunWith(Parameterized.class)
-public class MakingOrderTest {
+public class MakeOrderTest {
     private final static String URL = "https://qa-scooter.praktikum-services.ru";
     private String color;
-    public MakingOrderTest(String color){
+    public MakeOrderTest(String color){
         this.color = color;
     }
 
@@ -31,7 +31,7 @@ public class MakingOrderTest {
     }
 
     @Test
-    public void creatingOrderWithDifferentColors(){
+    public void createOrderWithDifferentColors(){
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpec(201));
             Order order = new Order("Naruto", "Uchiha", "Konoha, 142 apt.", 4, "+7 800 355 35 35", 5,"2023-03-10", "Saske, come back to Konoha", Collections.singletonList(color));
             SuccessOrder successOrder = SuccessOrder.successOrderRequest(order);
